@@ -1,11 +1,11 @@
 import { Container } from "reactstrap";
 import Dashboard from "../root/Dashboard";
-import Navbar from "../navbar/Navbar";
+import Navibar from "../navbar/Navibar";
 
 function App() {
   return (
     <Container >
-      <Navbar/>
+      <Navibar/>
       <Dashboard/>
     </Container>
   );
