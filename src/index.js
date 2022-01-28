@@ -5,18 +5,15 @@ import App from './components/root/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import configureStore from "./redux/reducers/configureStore"
+import {BrowserRouter} from "react-router-dom"
 
 
 const store = configureStore();
-ReactDOM.render(
+ReactDOM.render(<BrowserRouter>
   <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </Provider>
-  ,
-  document.getElementById('root')
-);
+</BrowserRouter>, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
